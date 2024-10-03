@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./dist" /* 追加 */,
+    "rootDir": "./src" /* 追加 */,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  } /* カンマをつけないとダメ!!! */,
+  "include": ["src/**/*"] /* 追加 */
+}
