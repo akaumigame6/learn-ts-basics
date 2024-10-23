@@ -30,6 +30,19 @@ const dateSet_2 = (dayDate:Date) : string=>{
     return `${year}/${month}/${day} ${hours}:${minutes}`;
 }
 
+import dayjs from "dayjs";
+import 'dayjs/locale/ja';
+
+dayjs.locale('ja');
+
+const dtFmt = "YYYY/MM/DD HH:mm(ddd)";
+const cratedAt: Date = new Date(); // 引数なしで現在日時を取得
+
+const str =
+  `期限 ${dayjs(deadline).format(dtFmt)}` +
+  `(登録日 ${dayjs(cratedAt).format(dtFmt)})`;
+console.log(str);
+
 // フォーマットした文字列をコンソールに出力
 console.log(`${year}/${month}/${day} ${hours}:${minutes}`);
 console.log(`${dateSet(deadline)}`);

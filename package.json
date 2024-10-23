@@ -9,5 +9,8 @@
     "start": "node dist/index.js",
     "build": "tsc",
     "dev": "nodemon --watch src --ext ts --verbose --exec ts-node src/index.ts"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
   }
 }
